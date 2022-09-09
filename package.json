@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "name": "book_record_management",
+  "description": "This is Book record management application using node.js and express",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yasshharad/book_record_management.git"
+  },
+  "author": "Yash Harad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yasshharad/book_record_management/issues"
+  },
+  "homepage": "https://github.com/Yasshharad/book_record_management#readme"
+}
