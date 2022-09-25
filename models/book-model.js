@@ -1,4 +1,5 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
+
 const Schema = mongoose.Schema;
 
 const bookSchema = new Schema(
@@ -24,10 +25,9 @@ const bookSchema = new Schema(
             required: true,
         },
     },
-
     {
         timestamps: true,
     }
 );
-
-module.export = mongoose.model("Book", bookSchema); //collection name of books is Book..
+//collection will have a name "books"
+module.exports = mongoose.model("Book", bookSchema);

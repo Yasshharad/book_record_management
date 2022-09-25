@@ -1,4 +1,5 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
+
 const Schema = mongoose.Schema;
 
 const userSchema = new Schema(
@@ -20,6 +21,10 @@ const userSchema = new Schema(
             ref: "Book",
             required: false,
         },
+        issuedDate: {
+            type: String,
+            required: false,
+        },
         returnDate: {
             type: String,
             required: false,
@@ -33,10 +38,9 @@ const userSchema = new Schema(
             required: true,
         },
     },
-
     {
         timestamps: true,
     }
 );
-
-module.export = mongoose.model("User", userSchema); //collection name of users is User..
+//collection will have a name "Users"
+module.exports = mongoose.model("User", userSchema);
